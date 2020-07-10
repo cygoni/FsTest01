@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="bn_live"
+        android:title="Live"
+        android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="bn_live"
+        android:title="favorite"
+        android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="bn_live"
+        android:title="All"
+        android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="bn_live"
+        android:title="Today"
+        android:icon="@drawable/ic_launcher_foreground"/>
+</menu>
