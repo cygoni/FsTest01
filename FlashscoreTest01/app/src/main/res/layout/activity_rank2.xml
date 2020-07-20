@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ff333333">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/layout_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/AppTheme.Toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tb_tv"
+                android:layout_centerHorizontal="true"
+                android:text="2019/2020"
+                android:textColor="#ffffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/toolbar"
+                android:id="@+id/league_nation">
+
+                <ImageButton
+                    android:id="@+id/rank_leagueimg"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/rank_leaguename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="프리미어리그"
+                    android:layout_toRightOf="@id/rank_leagueimg"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:id="@+id/rank_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <ImageButton
+                    android:id="@+id/rank_nationimg"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:layout_toRightOf="@id/rank_center"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:id="@+id/rank_nationname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="잉글랜드"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_toRightOf="@id/rank_nationimg"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rank_text"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/league_nation"
+                android:background="@drawable/live_time">
+
+                <TextView
+                    android:id="@+id/shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#FFDDDDDD"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/rank_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팀"
+                    android:layout_toRightOf="@id/shop"
+                    android:textColor="#FFDDDDDD"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="승점"
+                    android:textColor="#FFDDDDDD"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="득실"
+                    android:textColor="#FFDDDDDD"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/point"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경기"
+                    android:textColor="#FFDDDDDD"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/goal"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rank_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rank_text"/>
+
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_navigationbar"
+                android:layout_alignParentBottom="true"
+                android:background="#ff666666"/>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:id="@+id/nav"
+            app:menu="@menu/drawer"
+            app:headerLayout="@layout/drawer_header">
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_userimg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_person_48"
+            android:background="#FF888888"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/chat_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nick -> nick2"
+            android:layout_toRightOf="@id/chat_userimg"
+            android:textColor="#FF000000"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/chat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message-------------"
+            android:layout_toRightOf="@id/chat_userimg"
+            android:layout_below="@id/chat_nick"/>
+
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="15:15"
+            android:layout_margin="8dp"
+            android:textColor="#FF000000"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

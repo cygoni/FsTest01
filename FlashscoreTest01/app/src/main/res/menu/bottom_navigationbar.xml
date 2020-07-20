@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <item android:id="bn_live"
+    <item android:id="@+id/bn_live"
         android:title="Live"
-        android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="bn_live"
+        android:icon="@drawable/ic_baseline_live_tv_24"/>
+    <item android:id="@+id/bn_Favorite"
         android:title="favorite"
-        android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="bn_live"
+        android:icon="@drawable/ic_baseline_star_border_24"/>
+    <item android:id="@+id/bn_All"
         android:title="All"
-        android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="bn_live"
-        android:title="Today"
-        android:icon="@drawable/ic_launcher_foreground"/>
+        android:icon="@drawable/ic_baseline_sports_soccer_24"/>
+    <item android:id="@+id/bn_MyTeam"
+        android:title="MyTeam"
+        android:icon="@drawable/ic_baseline_favorite_border_24"/>
+    <item android:id="@+id/bn_Chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+
 </menu>

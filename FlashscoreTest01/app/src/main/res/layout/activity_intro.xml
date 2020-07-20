@@ -7,29 +7,24 @@
     tools:context=".IntroActivity"
     android:background="#EF700E">
 
-    <LinearLayout
-        android:layout_width="180dp"
+
+    <ImageView
+        android:id="@+id/gscore"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/gonscore"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerInParent="true"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/gonscore"/>
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="GScore"
-            android:textColor="#ffffffff"
-            android:textSize="30sp"
-            android:textStyle="bold|italic"
-            android:layout_gravity="center_vertical"
-            android:paddingRight="8dp"/>
-
-    </LinearLayout>
+        android:text="IliveSoccer"
+        android:textColor="#ffffffff"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/gscore"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="8dp"/>
 
 
 </RelativeLayout>

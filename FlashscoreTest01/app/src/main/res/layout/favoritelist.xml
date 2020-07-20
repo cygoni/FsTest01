@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/fv_homelogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_baseline_search_32"
+                android:background="#ff000000"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/fa_homename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HomeTeam"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/fv_awaylogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_baseline_search_32"
+                android:background="#ff000000"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/fa_awayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AwayTeam"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/score_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/fa_homescore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#FF000000"/>
+
+            <TextView
+                android:id="@+id/game_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전반 24"
+                android:padding="2dp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:layout_gravity="center_vertical"
+                android:background="#660000"/>
+
+            <TextView
+                android:id="@+id/fa_awayscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#FF000000"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:background="@drawable/fv_btn"
+            android:onClick="clickStar"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

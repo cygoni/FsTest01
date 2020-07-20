@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF333333">
+
+        <ImageView
+            android:id="@+id/live_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_star_border_56" />
+
+        <ImageView
+            android:id="@+id/live_homelogo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/live_star"
+            android:src="@drawable/ic_baseline_search_32" />
+
+
+        <TextView
+            android:id="@+id/live_homename"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/live_homelogo"
+            android:text="Home"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/live_awaylogo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/live_star"
+            android:src="@drawable/ic_baseline_search_32" />
+
+        <TextView
+            android:id="@+id/live_awayname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/live_awaylogo"
+            android:text="Away"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/live_time"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/live_time"
+            android:text="19:00"
+            android:textColor="#FF999999"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:padding="8dp" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

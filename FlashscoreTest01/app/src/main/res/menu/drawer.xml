@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="설정" />
+    <item android:title="순위"
+        android:id="@+id/table"/>
+
+    <item android:title="사진 및 영상"
+        android:id="@+id/picArec"/>
+
+    <item android:title="일정"
+        android:id="@+id/calendar"/>
+
+    <item android:title="기록"
+        android:id="@+id/record"/>
+
+    <item android:title="뉴스"
+        android:id="@+id/news"/>
+
+    <item android:title="축구 규칙"
+        android:id="@+id/rules"/>
+
+    <item android:title="고객센터"
+        android:id="@+id/callcenter"/>
+
 </menu>
