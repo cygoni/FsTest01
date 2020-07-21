@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="32dp"
-        android:background="FF888888">
+        android:background="#FF888888">
 
         <TextView
             android:id="@+id/set_main"
@@ -21,7 +21,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="00FFFFFFF"
+            android:background="#00FFFFFF"
             android:onClick="clickSetting"/>
         <ImageView
             android:layout_width="32dp"

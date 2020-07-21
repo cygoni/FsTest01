@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Rank2Activity"></activity>
+        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".Picture_RECActivity" />
+        <activity android:name=".Rank2Activity" />
         <activity android:name=".RankActivity" />
         <activity android:name=".ToolbarActivity" />
         <activity
